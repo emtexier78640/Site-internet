@@ -385,7 +385,7 @@ a {
 .section-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 80px 24px;
+    padding: 45px 24px;
     position: relative;
     z-index: 2;
 }
@@ -2064,7 +2064,7 @@ a {
    VIEW: B2B LANDING PAGE
    ========================================================================== */
 .hero-generous {
-    padding: 100px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
@@ -2225,7 +2225,7 @@ a {
 /* Appointment Form Area */
 .b2b-form-section {
     position: relative;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .b2b-form-section .form-header h2 {
@@ -2328,7 +2328,7 @@ a {
    ========================================================================== */
 .insta-section {
     background-color: var(--color-cream);
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .insta-section-inner {
@@ -2617,7 +2617,7 @@ a {
 .footer-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 80px 24px;
+    padding: 50px 24px;
     display: grid;
     grid-template-columns: 1.2fr repeat(3, 0.8fr);
     gap: 48px;
@@ -3152,7 +3152,7 @@ a {
 
 .kiosque-hero-section {
     background-color: var(--color-cream);
-    padding: 80px 0 60px;
+    padding: 50px 0 30px;
 }
 
 .kiosque-hero-grid {
@@ -3567,7 +3567,7 @@ a {
 /* ADN Cards Redesign */
 .adn-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -3582,10 +3582,6 @@ a {
     gap: 12px;
     align-items: flex-start;
     color: var(--color-text-dark);
-}
-
-.adn-card:nth-child(3) {
-    grid-column: 1 / 2;
 }
 
 .adn-dot {
@@ -3617,9 +3613,6 @@ a {
 @media (max-width: 900px) {
     .adn-grid {
         grid-template-columns: 1fr;
-    }
-    .adn-card:nth-child(3) {
-        grid-column: span 1;
     }
 }
 

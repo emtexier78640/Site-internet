@@ -3606,8 +3606,8 @@ a {
     bottom: 10px;
     left: 17px;
     width: 2px;
-    background-color: transparent;
-    display: none;
+    background-color: var(--color-orange);
+    opacity: 0.3;
 }
 
 .timeline-v-item {

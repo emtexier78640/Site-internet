@@ -66,23 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Admin Panel slide-out panel toggle
-    const adminToggle = document.getElementById('adminToggle');
-    const adminPanel = document.getElementById('adminPanel');
-    const adminClose = document.getElementById('adminClose');
 
-    if (adminToggle && adminPanel && adminClose) {
-        adminToggle.addEventListener('click', () => {
-            adminPanel.classList.toggle('active');
-        });
-
-        adminClose.addEventListener('click', () => {
-            adminPanel.classList.remove('active');
-        });
-    }
-
-    // Admin checklist interactions
-    setupAdminInteractions();
 
     // Scroll animation trigger setup
     initScrollReveal();
@@ -213,105 +197,7 @@ function updateDynamicDates() {
     if (nextMonth2El) nextMonth2El.textContent = `${monthNames[nextMonthIndex2]} ${yearMonth2}`;
 }
 
-// ==========================================================================
-// 4. ALTERNANTE PANEL INTERACTIONS
-// ==========================================================================
-function setupAdminInteractions() {
-    const taskPdf = document.getElementById('task-pdf');
-    const taskGps = document.getElementById('task-gps');
-    const taskPhotos = document.getElementById('task-photos');
-    const taskAnims = document.getElementById('task-anims');
 
-    // 1. Weekly PDF updates simulation
-    if (taskPdf) {
-        taskPdf.addEventListener('change', (e) => {
-            const previewArea = document.getElementById('pdfPreviewArea');
-            if (e.target.checked) {
-                previewArea.innerHTML = `
-                    <div style="text-align: center; color: var(--color-dark); max-width: 500px;">
-                        <i class="fa-solid fa-circle-check" style="font-size: 4rem; color: #2E7D32; margin-bottom: 20px;"></i>
-                        <h4 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 8px;">Nouveau menu PDF validé !</h4>
-                        <p style="font-size: 0.95rem; color: var(--color-text-muted);">L'alternante a correctement mis à jour le fichier <strong>Menu_Semaine_Active.pdf</strong>.</p>
-                        <span style="font-size: 0.8rem; background-color: #C8E6C9; color: #2E7D32; padding: 4px 12px; border-radius: 4px; display: inline-block; margin-top: 12px; font-weight: 600;">EN LIGNE</span>
-                    </div>
-                `;
-                document.getElementById('currentWeekDate').textContent = "📅 Semaine du Lundi Prochain (Mis à jour !)";
-            } else {
-                previewArea.innerHTML = `
-                    <div class="pdf-placeholder-screen">
-                        <i class="fa-regular fa-file-pdf"></i>
-                        <p>Aperçu du menu de la semaine</p>
-                        <span class="pdf-detail-txt">Mis à jour chaque lundi matin par l'alternante.</span>
-                    </div>
-                `;
-                updateDynamicDates();
-            }
-        });
-    }
-
-    // 2. Real GPS points simulation
-    if (taskGps) {
-        taskGps.addEventListener('change', (e) => {
-            if (e.target.checked) {
-                // Shift coordinates slightly or change popup titles to indicate REAL coordinates
-                const realKiosks = kioskLocations.map(loc => ({
-                    name: `📍 VRAI KIOSQUE - ${loc.name.replace(' (Rennes)', '')}`,
-                    coords: loc.coords
-                }));
-                renderMarkers(realKiosks);
-                alert("GPS : Vrais points physiques de nos 19 structures bois chargés avec succès !");
-            } else {
-                renderMarkers(kioskLocations);
-            }
-        });
-    }
-
-    // 3. Kiosk visual photo replacement
-    if (taskPhotos) {
-        taskPhotos.addEventListener('change', (e) => {
-            const visualContainer = document.querySelector('.concept-visual');
-            if (visualContainer) {
-                if (e.target.checked) {
-                    visualContainer.innerHTML = `
-                        <img src="assets/cuisine_kiosk.png" alt="Photo réelle du kiosque" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 4px solid var(--color-wood);">
-                        <p class="font-handwritten text-center" style="margin-top: 8px; font-size: 1.5rem; color: var(--color-wood);">Notre structure 100% bois naturel ! 🌲</p>
-                    `;
-                } else {
-                    visualContainer.innerHTML = `
-                        <div class="wood-placeholder">
-                            <i class="fa-solid fa-shop"></i>
-                            <span>Photo Kiosque Bois</span>
-                        </div>
-                    `;
-                }
-            }
-        });
-    }
-
-    // 4. Monthly animations grid shifter
-    if (taskAnims) {
-        taskAnims.addEventListener('change', (e) => {
-            const curMonthEl = document.getElementById('currentMonthName');
-            const activeCardBody = document.querySelector('.anim-card.active-month .anim-body');
-            
-            if (e.target.checked && activeCardBody) {
-                curMonthEl.textContent = "Juillet 2026";
-                activeCardBody.innerHTML = `
-                    <h4>⚓ Escale en Bretagne (Actif !)</h4>
-                    <p>Le poisson de pays et les caramels au beurre salé débarquent au bureau ! Menu spécial galette sarrasin le mardi.</p>
-                `;
-            } else {
-                updateDynamicDates();
-                if (activeCardBody) {
-                    activeCardBody.innerHTML = `
-                        <h4>☀️ Saveurs d'été & Smoothies</h4>
-                        <p>Animation Smoothies frais préparés à la minute par votre JAG et salades composées aux herbes fraîches du jardin.</p>
-                    `;
-                }
-            }
-        });
-    }
-}
 
 // ==========================================================================
 // 5. SCROLL REVEAL (INTERSECTION OBSERVER)

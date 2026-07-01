@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+Thumbs.db
+assets/.DS_Store
+
+# Heavy media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar.gz

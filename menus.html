@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Menus — Cuisine & Vous</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Cuisine & Vous réinvente la restauration d'entreprise sur le bassin rennais. Kiosques 100% bois animés par nos JAGs, plats 100% frais et faits maison par le Bureau des Saveurs.">
+    <meta name="keywords" content="traiteur midi, kiosque repas entreprise, cantine connectée, rennes restauration, bureau des saveurs, click and collect, repas bureau">
+    
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <header class="main-header" id="navbar">
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Cuisine & Vous" class="logo-img">
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link" id="nav-home">Accueil</a></li>
+                    <li><a href="histoire.html" class="nav-link" id="nav-histoire">Histoire</a></li>
+                    <li><a href="kiosque.html" class="nav-link" id="nav-kiosques">Nos Kiosques</a></li>
+                    <li><a href="engagements.html" class="nav-link" id="nav-engagements">Nos Engagements</a></li>
+                    <li><a href="menus.html" class="nav-link active" id="nav-menus">Nos Menus</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://www.cuisineetvous-commandes.com/" target="_blank" class="btn-nav-order" id="navOrderBtn">
+                    <i class="fa-solid fa-cart-shopping"></i> Commander
+                </a>
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Menu Mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+<div id="view-menus" class="page-view">
+        <!-- Section 1: Hero engagements -->
+        <section class="subpage-hero" style="background-color: var(--color-cream); padding: 80px 0 20px; position: relative; overflow: hidden;">
+            <!-- Floating Veggie Decorations -->
+            <div class="decor-veggie decor-veggie--left-top">
+                <img src="assets/cuisine-et-vous_black-23.png" alt="">
+            </div>
+            <div class="decor-veggie decor-veggie--right-top">
+                <img src="assets/cuisine-et-vous_black-21-2.png" alt="">
+            </div>
+            <div class="decor-veggie decor-veggie--left-bottom">
+                <img src="assets/cuisine-et-vous_black-34.png" alt="">
+            </div>
+            <div class="decor-veggie decor-veggie--right-bottom">
+                <img src="assets/cuisine-et-vous_black-16.png" alt="">
+            </div>
+
+            <div class="section-container" style="position: relative; z-index: 2;">
+                <div>
+                    <span class="label-orange" style="display: inline-block; border: 1px solid rgba(247,141,17,0.35); background-color: rgba(247,141,17,0.12); padding: 4px 14px; border-radius: var(--radius-pill); font-family: var(--font-sans); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--color-orange); letter-spacing: 0.5px;">Nos Menus</span>
+                </div>
+                <h1 style="margin-top: 15px; font-size: 3.2rem; font-weight: 800; line-height: 1.1; color: var(--color-text-dark); font-family: var(--font-sans); text-transform: none;">Cuisiné avec soin<br><em class="orange-light-text font-handwritten" style="font-size: 2.8rem; display: block; margin-top: 10px; font-style: normal; text-transform: none;">servi avec plaisir</em></h1>
+                
+                <p class="hero-baseline" style="font-size: 1.1rem; color: var(--color-text-muted); margin-top: 24px; max-width: 800px; line-height: 1.6;">Des plats frais cuisinés chaque matin par le Bureau des Saveurs, à Mouazé (35), livrés le midi dans votre établissement.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Menu de la Semaine (Crème) -->
+        <section class="pdf-menu-section" style="background-color: var(--color-cream); padding: 0 0 80px;">
+            <div class="section-container">
+                <div class="section-header scroll-reveal" style="margin-bottom: 50px; text-align: left;">
+                    <span class="font-handwritten" style="color: var(--color-orange); font-size: 1.8rem; display: block; margin-bottom: 8px; font-style: italic;">A la carte</span>
+                    <h2 style="font-family: var(--font-sans); font-weight: 800; font-size: 2.2rem; color: var(--color-text-dark); margin-bottom: 12px; text-transform: none;">Les menus de la semaine</h2>
+                    <div class="title-underline" style="margin: 0 0 20px 0;"></div>
+                </div>
+                
+                <!-- Image Menu representation -->
+                <div class="menu-image-container scroll-reveal" style="max-width: 800px; margin: 0 auto 30px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid rgba(0,0,0,0.06);">
+                    <img src="assets/Semaine 27.png" alt="Menu de la semaine" style="width: 100%; height: auto; display: block;">
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;" class="scroll-reveal">
+                    <p style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-text-dark); margin-bottom: 15px;">Découvrir la semaine prochaine ?</p>
+                    <button onclick="openMenuModal()" class="btn btn-primary" style="background-color: var(--color-orange); border-color: var(--color-orange); color: white; padding: 12px 30px; border-radius: 8px; cursor: pointer; font-family: var(--font-sans); font-weight: 600; font-size: 1rem; border: none; transition: transform 0.2s, background-color 0.2s;" onmouseover="this.style.backgroundColor='#e0750c'" onmouseout="this.style.backgroundColor='var(--color-orange)'"><i class="fa-solid fa-calendar-plus" style="margin-right: 8px;"></i> Voir le menu de la semaine 28</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: La carte change chaque jour (Jaune/Orange) -->
+        <section class="daily-change-section" style="background-color: var(--color-orange); padding: 80px 0; color: white;">
+            <div class="section-container">
+                <div class="section-header scroll-reveal" style="color: white; margin-bottom: 50px; text-align: left;">
+                    <span class="font-handwritten" style="color: white; font-size: 1.8rem; display: block; margin-bottom: 8px; font-style: italic;">Chaque midi</span>
+                    <h2 style="font-family: var(--font-sans); font-weight: 800; font-size: 2.2rem; color: white; margin-bottom: 12px; text-transform: none;">La carte change chaque jour</h2>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 1rem; max-width: 800px; line-height: 1.6;">Chaque midi, c'est l'aventure dans l'assiette ! Des recettes faites maison, avec des produits frais et de saison. C'est l'assurance d'un déjeuner sain et équilibré.</p>
+                </div>
+                
+                <!-- 3 KPI Cards -->
+                <div class="menu-kpi-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 60px;">
+                    <!-- KPI 1 -->
+                    <div class="menu-kpi-card" style="background-color: white; color: var(--color-text-dark); padding: 30px 24px; border-radius: 16px; text-align: center; box-shadow: var(--shadow-sm);">
+                        <div style="font-family: var(--font-sans); font-weight: 800; font-size: 3rem; color: var(--color-orange); line-height: 1;">5</div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 12px 0 8px; text-transform: none;">menus / semaine</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Des plats différents, variés et équilibrés.</p>
+                    </div>
+                    <!-- KPI 2 -->
+                    <div class="menu-kpi-card" style="background-color: white; color: var(--color-text-dark); padding: 30px 24px; border-radius: 16px; text-align: center; box-shadow: var(--shadow-sm);">
+                        <div style="font-family: var(--font-sans); font-weight: 800; font-size: 3rem; color: var(--color-orange); line-height: 1;">1x</div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 12px 0 8px; text-transform: none;">animation / mois</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Thématique culinaire locale ou internationale.</p>
+                    </div>
+                    <!-- KPI 3 -->
+                    <div class="menu-kpi-card" style="background-color: white; color: var(--color-text-dark); padding: 30px 24px; border-radius: 16px; text-align: center; box-shadow: var(--shadow-sm);">
+                        <div style="font-family: var(--font-sans); font-weight: 800; font-size: 3rem; color: var(--color-orange); line-height: 1;">7 ans</div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 12px 0 8px; text-transform: none;">de passion partagée</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin: 0; line-height: 1.4;">Savoir-faire artisanal et local garanti.</p>
+                    </div>
+                </div>
+                
+                <!-- Animations Subheading -->
+                <div class="section-header scroll-reveal" style="color: white; margin-bottom: 30px; text-align: left;">
+                    <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.6rem; color: white; text-transform: none;">Animations à venir</h3>
+                </div>
+                
+                <!-- 2 horizontal animations cards -->
+                <div class="animations-flex-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <!-- Anim Card 1 -->
+                    <div style="background-color: white; color: var(--color-text-dark); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 150px; position: relative;">
+                            <img src="assets/Festival des saveurs.png" alt="Festival des Saveurs" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill); text-transform: uppercase;">Ce mois-ci</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left;">
+                            <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.2rem; margin-bottom: 8px; text-transform: none;">Festival des Saveurs</h4>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Voyage en Italie avec nos pâtes fraîches faites maison par Stéphanie.</p>
+                        </div>
+                    </div>
+                    <!-- Anim Card 2 -->
+                    <div style="background-color: white; color: var(--color-text-dark); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 150px; position: relative;">
+                            <img src="assets/Roue de la Gourmandise.png" alt="La Roue de la Gourmandise" style="width: 100%; height: 100%; object-fit: cover;">
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-dark); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill); text-transform: uppercase;">À venir</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left;">
+                            <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.2rem; margin-bottom: 8px; text-transform: none;">La Roue de la Gourmandise</h4>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Venez tenter votre chance pour gagner votre repas ou un dessert surprise !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Nos gammes de produits (Crème) -->
+        <section class="product-gammes-section" id="produits" style="background-color: var(--color-cream); padding: 80px 0; scroll-margin-top: 80px;">
+            <div class="section-container">
+                <div class="section-header scroll-reveal" style="margin-bottom: 50px; text-align: left;">
+                    <span class="font-handwritten" style="color: var(--color-orange); font-size: 1.8rem; display: block; margin-bottom: 8px; font-style: italic;">Au jour le jour</span>
+                    <h2 style="font-family: var(--font-sans); font-weight: 800; font-size: 2.2rem; color: var(--color-text-dark); margin-bottom: 12px; text-transform: none;">Nos gammes de produits</h2>
+                    <p style="color: var(--color-text-muted); font-size: 1rem; max-width: 800px; margin: 0 0 12px 0;">Du sandwich aux plats chauds en passant par nos desserts faits maison, il y en a pour toutes les faims et toutes les envies.</p>
+                    <div class="title-underline" style="margin: 0 0 20px 0;"></div>
+                </div>
+                
+                <div class="products-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <!-- Product 1 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Pate.png" alt="Le Plat du Jour" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-utensils"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme chaud</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">Le Plat du Jour</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Un plat équilibré préparé chaque matin par le Bureau des Saveurs, livré chaud et prêt à être dégusté.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Fraich'Bol.png" alt="Le Bowl du Jour" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-bowl-rice"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme froid</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">Le Bowl du Jour</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Une salade gourmande et colorée, riche en saveurs et nutriments pour faire le plein d'énergie.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Pique-Mie.png" alt="Le Baguett'in" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-bread-slice"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme sandwich</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">Le Baguett'in</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Notre gamme de sandwiches froids et chauds dans une baguette artisanale croustillante.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Panier.png" alt="La Fraîch'heur" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-leaf"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme salade</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">La Fraîch'heur</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Une salade de saison croquante et légère, idéale pour accompagner votre déjeuner.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Dessert.png" alt="Les Desserts" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-cake-candles"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme sucrée</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">Les Desserts</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">De délicieux desserts gourmands faits maison (tiramisu, moelleux chocolat, panna cotta).</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Quiche.png" alt="La Quiche du Jour" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-pizza-slice"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme chaud</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">La Quiche du Jour</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Une part de tarte ou de quiche généreuse cuite au four par Stéphanie.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 7 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Entrée.png" alt="Les Entrées" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-shrimp"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme salée</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">Les Entrées</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Des petites entrées fraîches et salées pour commencer le repas en douceur.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 8 -->
+                    <div style="background-color: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
+                        <div style="height: 200px; position: relative;">
+                            <img src="assets/Velouté.png" alt="Velouté & Soupe" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; height: 100%; width: 100%; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; font-size: 3rem; color: var(--color-orange);"><i class="fa-solid fa-bowl-food"></i></div>
+                            <div style="position: absolute; top: 15px; left: 15px; background-color: var(--color-orange); color: white; font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-pill);">La gamme chaud</div>
+                        </div>
+                        <div style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                            <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.25rem; color: var(--color-text-dark); margin: 0; text-transform: none;">Velouté & Soupe</h3>
+                            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">Des veloutés et soupes réconfortantes, parfaits pour les pauses déjeuner d'automne et d'hiver.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Le Bureau des Saveurs (Orange) -->
+        <section class="bureau-saveurs-section" id="bureau-saveurs" style="background-color: var(--color-orange); padding: 80px 0 20px 0; color: white; scroll-margin-top: 80px;">
+            <div class="section-container" style="padding-bottom: 20px;">
+                <div class="section-header scroll-reveal" style="color: white; margin-bottom: 50px; text-align: left;">
+                    <span class="font-handwritten" style="color: white; font-size: 1.8rem; display: block; margin-bottom: 8px; font-style: italic;">Côté cuisine</span>
+                    <h2 style="font-family: var(--font-sans); font-weight: 800; font-size: 2.2rem; color: white; margin-bottom: 12px; text-transform: none;">Le Bureau des Saveurs</h2>
+                    <p style="color: rgba(255,255,255,0.9); font-size: 1rem; max-width: 800px; line-height: 1.6;">Situé à Mouazé au nord de Rennes, c’est là que bat le cœur culinaire de Cuisine & Vous. C’est ici que Gaëtan et son équipe préparent chaque matin tous les plats.</p>
+                </div>
+                
+                <!-- 5 cards in left-aligned single grid -->
+                <div class="bureau-cards-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 50px;">
+                    <!-- Card 1 -->
+                    <div style="background-color: white; color: var(--color-text-dark); padding: 24px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-orange); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;"><i class="fa-solid fa-kitchen-set"></i></div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 0; text-transform: none;">Tout préparé de A à Z</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.85rem; margin: 0; line-height: 1.5;">Des jus aux sauces, tout est fait maison avec amour.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div style="background-color: white; color: var(--color-text-dark); padding: 24px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-orange); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;"><i class="fa-solid fa-leaf"></i></div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 0; text-transform: none;">Produits sélectionnés</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.85rem; margin: 0; line-height: 1.5;">Priorité aux producteurs locaux et aux produits de saison.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div style="background-color: white; color: var(--color-text-dark); padding: 24px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-orange); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;"><i class="fa-solid fa-truck-fast"></i></div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 0; text-transform: none;">Livraison fraîche du jour</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.85rem; margin: 0; line-height: 1.5;">Liaison froide quotidienne vers vos kiosques.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div style="background-color: white; color: var(--color-text-dark); padding: 24px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-orange); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;"><i class="fa-solid fa-users-gear"></i></div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 0; text-transform: none;">Travail en équipe</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.85rem; margin: 0; line-height: 1.5;">Une équipe passionnée et soudée en cuisine.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div style="background-color: white; color: var(--color-text-dark); padding: 24px; border-radius: 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                        <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--color-orange); color: white; display: flex; align-items: center; justify-content: center; font-size: 1.1rem;"><i class="fa-solid fa-award"></i></div>
+                        <h4 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; margin: 0; text-transform: none;">Savoir-faire artisanal</h4>
+                        <p style="color: var(--color-text-muted); font-size: 0.85rem; margin: 0; line-height: 1.5;">Des recettes traditionnelles revisitées par des professionnels.</p>
+                    </div>
+                </div>
+                
+                <!-- Video player (Autoplay, Loop, Muted, Playsinline) -->
+                <div class="logo-alliance-block" style="background-color: var(--color-dark); border-radius: 16px; overflow: hidden; max-width: 800px; margin: 0 auto; box-shadow: var(--shadow-md);">
+                    <video style="width: 100%; height: auto; display: block; border-radius: 16px;" autoplay loop muted playsinline controls>
+                        <source src="assets/Vidéo Au bureau des Saveurs.mov" type="video/quicktime">
+                        <source src="assets/Vidéo Au bureau des Saveurs.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Week 28 Menu -->
+        <div id="menuModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6); align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+            <div style="background-color: white; margin: auto; padding: 20px; border-radius: 16px; max-width: 700px; width: 90%; position: relative; box-shadow: var(--shadow-lg); text-align: center; display: flex; flex-direction: column; gap: 15px;">
+                <span onclick="closeMenuModal()" style="position: absolute; right: 20px; top: 15px; font-size: 28px; font-weight: bold; color: var(--color-text-muted); cursor: pointer; transition: color 0.2s;" onmouseover="this.style.color='var(--color-orange)'" onmouseout="this.style.color='var(--color-text-muted)'">&times;</span>
+                <h3 style="font-family: var(--font-sans); font-weight: 800; font-size: 1.5rem; color: var(--color-text-dark); margin: 10px 0 0 0; text-transform: none;">Menu de la semaine prochaine (Semaine 28)</h3>
+                <div style="border-radius: 8px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); max-height: 70vh;">
+                    <img id="modalMenuImg" src="assets/Semaine 28.png" alt="Menu Semaine 28" style="width: 100%; height: auto; display: block;" onerror="handleModalImgError(this)">
+                    <div id="modalMenuFallback" style="display: none; padding: 60px 40px; background: linear-gradient(135deg, #FFF, var(--color-cream)); justify-content: center; align-items: center; flex-direction: column; gap: 15px;">
+                        <i class="fa-solid fa-calendar-days" style="font-size: 4rem; color: var(--color-orange);"></i>
+                        <p style="font-family: var(--font-sans); font-size: 1.1rem; color: var(--color-text-dark); font-weight: bold; margin: 0;">Le menu de la semaine 28 arrive très vite !</p>
+                        <p style="color: var(--color-text-muted); font-size: 0.9rem; margin: 0; max-width: 400px; line-height: 1.5;">Notre JAG l'actualise chaque semaine. Repassez d'ici quelques heures pour découvrir nos nouvelles recettes croustillantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openMenuModal() {
+                document.getElementById('menuModal').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+            function closeMenuModal() {
+                document.getElementById('menuModal').style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            function handleModalImgError(img) {
+                img.style.display = 'none';
+                document.getElementById('modalMenuFallback').style.display = 'flex';
+            }
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('menuModal');
+                if (event.target == modal) {
+                    closeMenuModal();
+                }
+            });
+        </script>
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 11: ALTERNANTE DASHBOARD (Control Panel widget)
+         ========================================================================== -->
+    <div class="admin-toggle-btn" id="adminToggle" title="Ouvrir le panneau alternante">
+        <i class="fa-solid fa-circle-info"></i> Notes Alternante
+    </div>
+    
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header-bar">
+            <h3>📝 Espace de Gestion Hebdomadaire</h3>
+            <button class="btn-close-admin" id="adminClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="admin-body-panel">
+            <p>Bienvenue dans votre outil de suivi des tâches du site. Cochez les actions effectuées pour actualiser les données :</p>
+            <div class="checklist">
+                <label class="check-item">
+                    <input type="checkbox" id="task-pdf">
+                    <span><strong>Lundi matin :</strong> Remplacer le PDF du menu & actualiser les dates.</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" id="task-gps">
+                    <span><strong>Coordonnées GPS :</strong> Remplacer les 19 adresses de test par les vrais points.</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" id="task-photos">
+                    <span><strong>Photos Kiosque :</strong> Uploader les clichés officiels des structures bois.</span>
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" id="task-anims">
+                    <span><strong>1er du mois :</strong> Mettre à jour la grille des animations à venir.</span>
+                </label>
+            </div>
+            <div class="admin-tips">
+                <strong>💡 Note importante :</strong> Les modifications des dates et des textes d'animations se reflètent directement en temps réel sur la page <strong>Nos Menus</strong> du site de test.
+            </div>
+        </div>
+    </div>
+
+    
+<!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col brand-col">
+                <img src="assets/Logo_blanc.png" alt="Cuisine & Vous" class="logo-img footer-logo-img">
+                <p class="footer-baseline-txt">Cuisinés pour vous, servis près de vous</p>
+                <p class="raison-de-tre">« Remettre de l'humain et du goût au cœur de la pause déjeuner au bureau. »</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/cuisine_et.vous/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Cuisineetvous.35" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/cuisine-et-vous2/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div class="footer-col link-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">• Accueil</a></li>
+                    <li><a href="histoire.html">• Notre Histoire</a></li>
+                    <li><a href="kiosque.html">• Nos Kiosques</a></li>
+                    <li><a href="engagements.html">• Nos Engagements</a></li>
+                    <li><a href="menus.html">• Nos Menus</a></li>
+                    <li><a href="https://www.cuisineetvous-commandes.com/" target="_blank" class="orange-text">• Commander →</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Organisations -->
+            <div class="footer-col link-col">
+                <h4>Organisations</h4>
+                <ul>
+                    <li><a href="b2b.html">• Accueillir un kiosque</a></li>
+                    <li><a href="kiosque.html#horizons-section">• Résidences seniors</a></li>
+                    <li><a href="kiosque.html#horizons-section">• Établissements de santé</a></li>
+                    <li><a href="kiosque.html#jag-section">• Devenir JAG</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Contact Info -->
+            <div class="footer-col info-col">
+                <h4>Contact</h4>
+                <p style="margin-bottom: 12px; line-height: 1.5; color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                    Siege :<br>
+                    11 rue du bois de soeuvres<br>
+                    35770 vern sur seiche
+                </p>
+                <p style="margin-bottom: 12px; font-size: 0.9rem;">
+                    <a href="mailto:contact@cuisine-et-vous.fr" style="color: rgba(255,255,255,0.7); text-decoration: none;">contact@cuisine-et-vous.fr</a>
+                </p>
+                <p style="margin-bottom: 12px; color: rgba(255,255,255,0.7); font-size: 0.9rem;">Cuisine : Mouazé (35)</p>
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">+33 2 22 91 10 35</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 Cuisine & Vous. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet.js Map Library JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Application Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
